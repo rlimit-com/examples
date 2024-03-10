@@ -4,7 +4,7 @@ import { RateLimit } from "@rlimit/http";
 
 const app = new Hono();
 const rlimit = new RateLimit({
-	namespace: "example",
+	namespace: "example", // your rlimit.com namespace
 	maximum: 5,
 	interval: "10s",
 });
