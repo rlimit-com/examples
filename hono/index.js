@@ -28,7 +28,8 @@ const rateLimitMiddleware = async (c, next) => {
 app.use(rateLimitMiddleware);
 
 app.get("/", (c) => {
-	return c.json({ message: "Hello Bun!" });
+	// your application logic here
+	return c.json({ message: "Hello Hono!" });
 });
 
 serve(app);
