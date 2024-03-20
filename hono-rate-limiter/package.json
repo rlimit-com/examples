@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --watch './' index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@rlimit/storage": "^0.0.4",
+    "hono": "^4.1.1",
+    "nodemon": "^3.0.6"
+  }
+}
