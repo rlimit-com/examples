@@ -1,10 +1,10 @@
-import { serve } from "@hono/node-server";
-import { Hono } from "hono";
-import { Store } from "@rlimit/storage";
+const { serve } = require("@hono/node-server");
+const { Hono } = require("hono");
+const { Store } = require("@rlimit/storage");
 
-import honoRateLimiter from "hono-rate-limiter";
+const { rateLimiter } = require("hono-rate-limiter");
 
-const limiter = honoRateLimiter.rateLimiter({
+const limiter = rateLimiter({
 	windowMs: 60 * 1000, // 1 minute
 	limit: 20, // Limit each key (from keyGenerator) to 20 requests per `window` (here, per 1 minute)
 	standardHeaders: "draft-6", // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header

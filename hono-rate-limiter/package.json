@@ -1,15 +1,17 @@
 {
-  "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "version": "0.0.0",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon --watch './' index.js"
+    "start": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=18.11"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2",
-    "@rlimit/storage": "^0.0.4",
+    "@rlimit/storage": "^0.0.7",
     "hono": "^4.1.1",
-    "hono-rate-limiter": "^0.1.1",
-    "nodemon": "^3.0.6"
+    "hono-rate-limiter": "^0.1.1"
   }
 }

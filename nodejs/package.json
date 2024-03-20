@@ -6,6 +6,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@rlimit/http": "^0.0.1"
+    "@rlimit/http": "^0.0.2"
   }
 }

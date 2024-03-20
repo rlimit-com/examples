@@ -9,7 +9,7 @@ let rlimit = rateLimit({
   limit: 3,
   windowMs: 5_000,
   store: new Store({
-    namespace: 'example', // your rlimit.com namespace 
+    namespace: 'example', // your rlimit.com namespace
   })
 })
 
